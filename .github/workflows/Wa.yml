@@ -73,8 +73,7 @@ jobs:
 
       - name: Compile Firmware
         run: |
-          echo -e "$(($(nproc)+1)) Th compile"
-          make -j$(($(nproc)+1)) || make -j1 V=s
+          make -j1 || make -j1 V=s
           echo "======================="
           echo "Space usage:"
           echo "======================="
